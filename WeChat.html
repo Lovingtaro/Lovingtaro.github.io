@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
     <title>HTML5模拟微信聊天界面</title>
     <style>
@@ -167,7 +168,6 @@
 </html>
 <script src="lib/vue.js"></script>
 <script src="lib/jquery-1.12.4.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
     // 需求1 点击发送 添加一个 自己的聊天内容去页面上
     let app = new Vue({
