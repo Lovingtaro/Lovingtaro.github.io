@@ -466,15 +466,25 @@ span.border.one:after {
 	-ms-border-radius:1.5em;
 }
 .about-right{
-	    float: left;
-	padding:0;
-	background:url(../images/about-pic.jpg) no-repeat 0px 0px;
+	 background-color: #f4f4f4;
+	/* opacity: 0.6; */
+	z-index: 1;
+}
+.about-rightimg{
+	float: left;
+	padding:0px;
+	width: 100%;
+	height:580px;
+	background:url(../images/about-pic.jpg) no-repeat 5px -32px;
 	min-height:580px;
-	background-size: cover;
+	/* width:100%;*/
+	height:580px;
+	background-size:cover;
    -o-background-size: cover;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -ms-background-size: cover;
+   z-index: 666;
 }
 /*-- services --*/
 .service-head h3{
