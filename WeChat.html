@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5模拟微信聊天界面</title>
     <style>
         /**重置标签默认样式*/
@@ -15,6 +16,9 @@
       body {
         overflow: hidden;
       }
+      [v-cloak]{
+        display: none;
+      }
       #container {
         width: 450px;
         height: 780px;
@@ -22,6 +26,7 @@
         margin: 20px auto 0;
         position: relative;
         box-shadow: 20px 20px 55px #777;
+       
       }
       .header {
         background: #000;
@@ -128,7 +133,7 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" v-cloak>
         <div class="header">
             <span style="float: left;">We Chat</span>
             <span style="float: right;">今天</span>
